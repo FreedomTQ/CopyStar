@@ -1,0 +1,221 @@
+*,
+*:before *:after {
+    box-sizing: border-box;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.041);
+}
+
+/*_________________*/
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/*     Хедер     */
+
+.header {
+    padding: 20px;
+    background-color: rgb(137, 190, 226);
+    box-shadow: 5px 1px 12px 2px rgba(39, 39, 39, 0.582);
+}
+
+.nav {
+    font-size: 18px;
+
+}
+.nav ul li {
+    list-style-type: none;
+}
+
+.nav ul li + li {
+    margin-left: 20px;
+}
+.nav .nav-link {
+    text-decoration: none;
+    color: rgb(36, 120, 216);
+
+}
+.nav .nav-link:hover {
+    color: rgb(166, 227, 255);
+
+}
+
+.main-content {
+    margin: 25px 40px 15px 40px;
+}
+.main-content {
+    font-size: 16px;
+}
+.title {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*  Формы    */
+
+.form-container {
+    border: 1px solid rgb(137, 190, 226);
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+form .input {
+    width: 400px;
+    height: 24px;
+    font-size: 16px;
+    background-color: rgb(247, 247, 247);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 15px;
+}
+
+form .input-border {
+    border-bottom: 1px solid rgb(81, 173, 38);
+}
+
+form .input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+form .input-text {
+    padding-left: 3px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+form .checkbox {
+    margin-top: 20px;
+    margin-bottom: -7px;
+}
+
+A {
+    font-weight: bolder;
+    color: rgb(110, 82, 236); /* Цвет ссылок */
+    text-decoration: none;
+   }
+   A:active {
+    color: #67c2c5; /* Цвет активных ссылок */
+   }
+
+form .btn {
+    font-weight: bold;
+    background-color: rgb(137, 190, 226);
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    padding: 8px 12px 8px 12px;
+}
+form .btn:hover {
+    cursor: pointer;
+    background-color: rgb(36, 120, 216);
+    color: white;
+}
+
+
+
+.error-input {
+
+    border-bottom: 1px solid rgb(255, 0, 0);
+
+}
+.a{
+    color: rgb(64, 173, 31);
+}
+.error-msg {
+    margin: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: red;
+}
+
+/*    Карточки товаров     */
+.cards {
+    display: flex;
+    height: 400px;
+}
+.card {
+    display: inline-block;
+    margin: 3% 5%;
+    border: 1px solid black;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+
+}
+.card:first-child img{
+    margin-top: 30px;
+}
+.card img {
+    width: 170px;
+}
+.card .btn {
+    font-weight: bold;
+    background-color: rgb(137, 190, 226);
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    padding: 8px 12px 8px 12px;
+}
+
+
+
+/*    Футер     */
+
+.footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(137, 190, 226);
+    box-shadow: 5px 1px 12px 2px rgba(39, 39, 39, 0.521);
+    
+}
+.footer .text {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.479);
+    text-align: left;
+}
